@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-surface-900 text-white font-sans antialiased;
+    min-height: 100dvh;
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-surface-800;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-600 rounded-full;
+  }
+
+  /* Responsive container */
+  #root {
+    width: 100%;
+    min-height: 100dvh;
+    position: relative;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-500 hover:bg-primary-600 active:bg-primary-700 text-white font-semibold py-3.5 px-6 rounded-2xl transition-all duration-200 shadow-glow hover:shadow-lg active:scale-95 select-none cursor-pointer;
+  }
+
+  .btn-secondary {
+    @apply bg-surface-700 hover:bg-surface-600 active:bg-surface-600 text-white font-semibold py-3.5 px-6 rounded-2xl transition-all duration-200 active:scale-95 select-none cursor-pointer border border-white/10;
+  }
+
+  .btn-accent {
+    @apply bg-accent-500 hover:bg-accent-600 active:bg-accent-600 text-white font-semibold py-3.5 px-6 rounded-2xl transition-all duration-200 shadow-glow-accent active:scale-95 select-none cursor-pointer;
+  }
+
+  .card {
+    @apply bg-surface-800 rounded-3xl p-5 shadow-card border border-white/5;
+  }
+
+  .glass {
+    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-3xl;
+  }
+
+  .input-field {
+    @apply w-full bg-surface-700 border border-white/10 rounded-2xl px-4 py-3.5 text-white placeholder-white/30 focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 transition-colors duration-200;
+  }
+
+  .screen {
+    @apply min-h-dvh flex flex-col;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, #7C4DFF 0%, #00BCD4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-gradient-brand {
+    background: linear-gradient(135deg, #7C4DFF 0%, #5a23e0 100%);
+  }
+
+  .bg-gradient-hero {
+    background: radial-gradient(ellipse at top, rgba(124,77,255,0.25) 0%, transparent 60%),
+                radial-gradient(ellipse at bottom right, rgba(0,188,212,0.15) 0%, transparent 60%),
+                #0F0F1A;
+  }
+
+  .min-h-dvh {
+    min-height: 100dvh;
+  }
+
+  .h-dvh {
+    height: 100dvh;
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(124, 77, 255, 0.6);
+  }
+}

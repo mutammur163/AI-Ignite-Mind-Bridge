@@ -1,0 +1,54 @@
+[
+  {
+    "id": "icall",
+    "name": "iCall",
+    "org": "TISS Mumbai",
+    "description": "Free counseling by trained professionals. Call, chat, or email.",
+    "contact": "9152987821",
+    "type": "call",
+    "tags": ["free", "english", "hindi", "chat"],
+    "availability": "Mon–Sat, 8 AM – 10 PM",
+    "website": "https://icallhelpline.org",
+    "color": "#7C4DFF",
+    "emoji": "🟣"
+  },
+  {
+    "id": "vandrevala",
+    "name": "Vandrevala Foundation",
+    "org": "Vandrevala Foundation",
+    "description": "24/7 mental health helpline. Speaks Hindi and English.",
+    "contact": "1860-2662-345",
+    "type": "call",
+    "tags": ["free", "24x7", "english", "hindi"],
+    "availability": "24 hours, 7 days",
+    "website": "https://www.vandrevalafoundation.com",
+    "color": "#00BCD4",
+    "emoji": "🔵"
+  },
+  {
+    "id": "telemanas",
+    "name": "Tele MANAS",
+    "org": "Government of India",
+    "description": "National mental health helpline by the Ministry of Health. Free & confidential.",
+    "contact": "14416",
+    "type": "call",
+    "tags": ["free", "24x7", "hindi", "english"],
+    "availability": "24 hours, 7 days",
+    "website": "https://telemanas.mohfw.gov.in",
+    "color": "#FF9800",
+    "emoji": "🟠"
+  },
+  {
+    "id": "icall-chat",
+    "name": "iCall Online Chat",
+    "org": "TISS Mumbai",
+    "description": "Chat with a counselor online if you're not ready to call.",
+    "contact": "icallhelpline.org",
+    "type": "chat",
+    "tags": ["free", "english", "chat"],
+    "availability": "Mon–Sat, 8 AM – 10 PM",
+    "website": "https://icallhelpline.org",
+    "color": "#4CAF50",
+    "emoji": "🟢"
+  }
+]
